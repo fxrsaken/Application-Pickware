@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naveed-Ahmad Khalid - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0a78591152.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">Über Mich</a></li>
+            <li><a href="#services">Wieso Ich?</a></li>
+            <li><a href="#portfolio">Meine Arbeit</a></li>
+            <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Hej, Ich bin Naveed-Ahmad Khalid aus Rüsselsheim</p>
+            <h1>Und bald hoffentlich <span>Werkstundent</span><br>bei <span>euch</span>.</h1>
+        </div>
+    </div>
+</div>
+
+<!-------------------about---------------------------------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Über Mich</h1>
+                <p>Ich bin fast seitdem ich denken kann am Computer gewesen. Damals in der Grundschule noch zum schauen von Kinderserien und spielen von Minecraft, heute eher mit anderen Vorsätzen.
+                   Ich habe in den letzten Jahren fast alles ausprobiert sei es editieren von Videos von mehr oder weniger bekannten Youtubern, programmieren von eigenen kleinen Spielen über Unity mit C#, wenn auch eher
+                   unerfolgreich. Dabei habe ich mir jedoch einige Fähigkeiten angeeignet die ich meiner Meinung nach perfekt bei euch einsetzen und selbstverständlich auch viel neues dazulernen könnte. Dies wäre Parallel zu einem Studium die optimale Grundlage um sich Weiterbilden zu können.
+                </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Bildbearbeitung</span><br>Erweiterte Erfahrung mit Photoshop sowie der Adobe Cloud im Generellen</li>
+                            <li><span>Videoschnitt</span><br>Erweiterte Erfahrungen mit Premiere Pro als auch Grundlagen von After Effects</li>
+                            <li><span>Grundlagen der Programmierung</span><br>Anfängerwissen im Bereich html, css, js als auch C# und C++</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Freiberuflicher Videoeditor</span><br>Zusammenarbeit mit mehreren Personen im Team um eine Idee möglichst Perfekt umzusetzen</li>
+                            <li><span>Grundlagen der Programmierung</span><br>Sei es der Informatik Unterricht in der 9. Klasse oder mit Freunden gemeinsam die Idee eines Spieles umsetzen</li>
+                            <li><span>Vielleicht auch bald bei euch? ^^</span><br>Erste Professionelle Erfahrungen im Bereich des Webdesigns?</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2014-2023</span><br>Allgemeine Hochschulreife an der Max-Planck-Schule</li>
+                            <li><span>2023-?</span><br>Viel Mehr hab ich bis jetzt noch nicht geschafft :p</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<!----------services------------------------>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Wieso Ich?</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Disziplin.</h2>
+                <p>Da Ich bis jetzt jederzeit eigenständig und ohne Vorgaben gearbeitet habe, musste ich mir selber aneignen Deadlines einzuhalten und Arbeit und Privates eigenständig zu koordinieren.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Anforderungen</h2>
+                <p>Falls ich nicht das Angebot gänzlich Misverstanden habe: Ich bin genau die Person die sie suchen. Ich bin bereit voller Wissensdurst und Motivation mich an die Arbeit zu machen.</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Erfahrung</h2>
+                <p>Durch die von mir gesammelten Erfahrungen als Freiberufler habe ich mir einige Unverzichtbare Soft-Skills angeeignet die ich auch in den weiteren Stationen des Berufsleben einsetzen möchte.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------portfolio------------------------>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Meine Arbeit</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpg" alt="">
+                <div class="layer">
+                    <h3>Platzhalter</h3>
+                    <p>Falls mir noch was einfällt.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg" alt="">
+                <div class="layer">
+                    <h3>Mein Portfolio aus der Zeit als Freiberufler</h3>
+                    <p>Hier könnt ihr mein Portfolio als Youtube-Playlist aufrufen welches Ich verwendet habe. Ist es relevant für euch? Ich glaube eher nicht. Ich dachte trotzdem
+                        es wäre ganz nett das hier einzubringen.</p>
+                        <a href="https://www.youtube.com/playlist?list=PL1w08oGc4MYVK8DzapV3B7LFEnHG405kj"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpg" alt="">
+                <div class="layer">
+                    <h3>Platzhalter</h3>
+                    <p>Falls mir noch was einfällt.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="btn">Zurück zum Anfang</a>
+    </div>
+</div>
+    <div class="copyright">
+        <p>Copyright © Naveed</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
